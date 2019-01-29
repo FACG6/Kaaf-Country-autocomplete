@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+
+    <title>Country</title>
 </head>
+
 <body>
-    
+    <header class="myHead">
+        <img class="main-logo" src="https://here.intersolute.de/images/icons/0003-layer-5.png">
+        <h1 class="title">Country AutoComplete</h1>
+    </header>
+    <main>
+        <div class="entryContainer">
+            <form class="" action="/create-post" method="post" id="the-form">
+                <input type="text" name="country" class="entryContainer--input" id="">
+                <input type="submit" class="entryContainer--btn" value="Submit">
+            </form>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="counteryResult"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </body>
+
 </html>
