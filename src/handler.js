@@ -1,5 +1,3 @@
-
-
 const path = require('path');
 const fs = require('fs');
 
@@ -31,7 +29,27 @@ const handleNotFond = (request , response)=>{
             }
         })
 }
+const handelServe = (request, response) => {
+const endpoint = request.url;
+    const extintion = endpoint.split(".")[1];
+    const contantType = {
+        html: "text/html",
+        css: "text/css",
+        js: "text/javascript",
+        json: "application/json",
+    }
+    pathFile = path.join(__dirname,"..",endpoint);
+    fs.readFile(pathFile, (error, file) => {
+        if(error){
+            console.log(error);
+        }else{
+            response.writeHead(200, {"contantType" : contantType[extintion]})
+            response.end(file);
+        }
+    })
+}
 module.exports= {
     handlehomePage,
     handleNotFond,
+    handelServe,
 }
