@@ -1,10 +1,11 @@
 # Kaaf-Country-autocomplete
-Country-autocomplete
+
 ***What?***
 
 Our website that give you ability to enter your country name in the search text input field which will give you back sensible suggestion related to the selected country.
 
 ***How?***
+
 Day 1:
 
 Creating our server & router and starting to create our functions.
