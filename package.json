@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,12 @@
     "url": "https://github.com/FACG6/Kaaf-Country-autocomplete/issues"
   },
   "homepage": "https://github.com/FACG6/Kaaf-Country-autocomplete#readme",
-  "dependencies": {
+  "devDependencies": {
     "nodemon": "^1.18.9",
     "tap-spec": "^5.0.0",
+    "tape": "^4.9.2"
+  },
+  "devDependencies": {
     "tape": "^4.9.2"
   }
 }
