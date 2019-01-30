@@ -12,4 +12,5 @@ const router = (request, response) => {
     handler.handleNotFond(request, response);
   }
 };
+
 module.exports = router;
