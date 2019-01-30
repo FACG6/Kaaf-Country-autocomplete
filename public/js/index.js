@@ -19,4 +19,3 @@ const render = (array) => {
     }
   })
 }
-module.exports = render;
