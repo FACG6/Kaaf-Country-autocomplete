@@ -38,7 +38,7 @@ src folder: The back end part contains js files (router.js, server.js, handler.j
    * Learning about how to modularise your server code.
    * Learning deal with huroku and we push our project on huroku
    This url for our project on huroku
-     * https://dashboard.heroku.com/apps/kaaf-country-autocomplete-app/logs
+     * https://kaaf-country-autocomplete-app.herokuapp.com
 
 *** Member Team work ***
     * Alaa ,fatma , Abdallah , Khader
