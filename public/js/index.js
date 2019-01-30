@@ -5,9 +5,7 @@ const dataRequist = (url, callback) => {
       const response = JSON.parse(xhr.responseText);
       callback(response);
     }
-  }
+  };
   xhr.open("GET", url);
   xhr.send();
-}
-
-
+};
