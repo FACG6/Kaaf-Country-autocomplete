@@ -11,12 +11,12 @@ const dataRequist = (method, url, callback) => {
 }
 const render = (array) => {
   array.forEach(element => {
-      if (element.country === input.value.trim()) {
-          name.textContent = input.value;
-          capital.textContent = `Capital : ${element.capital}`;
-          currncy.textContent = `Currncy : ${element.currency_code}`;
-          pop.textContent = `Population : ${Number(element.population) / 1000000} Million `;
-      }
+    if (element.country === input.value.trim()) {
+      name.textContent = input.value;
+      capital.textContent = `Capital : ${element.capital}`;
+      currncy.textContent = `Currncy : ${element.currency_code}`;
+      pop.textContent = `Population : ${Number(element.population) / 1000000} Million `;
+    }
   })
-} 
-module.exports=render;
+}
+module.exports = render;
