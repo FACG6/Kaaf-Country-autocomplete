@@ -619,7 +619,7 @@
     },
     {
         "country": "Israel",
-        "capital": "Jerusalem",
+        "capital": "It's NOT a Country",
         "currency_code": "ILS",
         "population": "6217000"
     },
@@ -985,8 +985,8 @@
     },
     {
         "country": "Palestine",
-        "capital": "Gaza",
-        "currency_code": null,
+        "capital": "Jerusalem",
+        "currency_code": "ILS",
         "population": "3101000"
     },
     {
