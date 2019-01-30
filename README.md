@@ -19,6 +19,7 @@ Check our app's responsive and git a 100% of accessibility.
 Deploying on Heroku.
 
 ***What is the Sites file structure?***
+
 The site contains 3 folders:
 
 public folder:
@@ -42,18 +43,26 @@ src folder: The back end part contains js files (router.js, server.js, handler.j
      * https://kaaf-country-autocomplete-app.herokuapp.com
 
 *** Member Team work ***
-    * Alaa ,fatma , Abdallah , Khader
+
+    * Khader
+    * Abdallah 
+    * Alaa 
+    * Fatma 
+
 
 ***How to use ?***
-User Side :
 
-   * Open url for the website .
-   * Write the Country Name in the input box bellow.
-   * click on any itemList to search about it .
-   * Developer Side:
+ * **User Side :**
 
-   * git clone "git@github.com:FACG5/Seacrh_Box_Team.git"
-
-   * npm install to install all dependencies`
-
-   * npm run dev
+    * Open url for the website .
+    * Write the Country Name in the input box bellow.
+    * click on any itemList to search about it .
+   
+ * **Developer Side:**
+     
+    * git clone
+    ```
+      git clone  https://github.com/FACG6/Kaaf-Country-autocomplete.git
+    ```
+    * npm install to install all dependencies`
+    * npm run dev
