@@ -44,12 +44,12 @@ const handelServe = (request, response) => {
     })
 }
 const handelJsonFile = (request, response) => {
-    const pathFile = path.join(__dirname,"Country.json")
-    fs.readFile(pathFile,(error,file) => {
-        if(error){
+    const pathFile = path.join(__dirname, "Country.json")
+    fs.readFile(pathFile, (error, file) => {
+        if (error) {
             console.log("error");
-        }else{
-            response.writeHead(200, {"contant-Type" : "application/json"})
+        } else {
+            response.writeHead(200, { "contant-Type": "application/json" })
             response.end(file);
         }
     })
