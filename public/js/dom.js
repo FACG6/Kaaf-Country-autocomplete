@@ -13,17 +13,8 @@ input.addEventListener("input", () => {
         const listItem = document.createElement("option");
         listItem.textContent = item.country;
         dataResult.appendChild(listItem);
-      }
-    });
-
-    response.forEach(element => {
-      if (element.country === input.value) {
-        name.textContent = input.value;
-        capital.textContent = `Capital : ${element.capital}`;
-        currncy.textContent = `Currncy : ${element.currency_code}`;
-        pop.textContent = `Population : ${Number(element.population) /
-          1000000} Million `;
-      }
-    });
-  });
-});
+      };
+    })
+    render(response);
+  })
+})
