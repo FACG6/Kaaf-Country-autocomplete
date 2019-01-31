@@ -11,12 +11,16 @@
 
 <body>
     <header class="myHead">
-        <img class="main-logo" src="https://here.intersolute.de/images/icons/0003-layer-5.png" >
+        <img class="main-logo" src="https://here.intersolute.de/images/icons/0003-layer-5.png" alt='logo'>
         <h1 class="title">Country AutoComplete</h1>
     </header>
     <main>
         <div class="entryContainer">
-            <input type="text" name="country" class="entryContainer--input" id="" list="datalist">
+            <label class="lblCount"> Enetr Country :
+                <br>
+                <br>
+                <input type="text" name="country" class="entryContainer--input" id="" list="datalist" placeholder="Type The Country Name ..">
+            </label>
             <datalist id="datalist">
             </datalist>
         </div>
@@ -35,7 +39,6 @@
             <h3 class="pop"></h3>
         </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="./public/js/index.js"></script>
     <script src="./public/js/dom.js"></script>
 </body>
