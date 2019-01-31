@@ -1,4 +1,5 @@
 const handler = require("./handler");
+
 const router = (request, response) => {
   const endpoint = request.url;
   if (endpoint === "/") {
@@ -11,4 +12,5 @@ const router = (request, response) => {
     handler.handleNotFond(request, response);
   }
 };
+
 module.exports = router;
