@@ -12,9 +12,8 @@ const handlehomePage = (request, response) => {
     }
   });
 };
-
 const handleNotFond = (request, response) => {
-  const pathfile = path.join(__dirname,"..","public","pages","notFound.html");
+  const pathfile = path.join(__dirname, "..", "public", "pages", "notFound.html");
   fs.readFile(pathfile, (error, file) => {
     if (error) {
       console.log("error");
@@ -24,7 +23,6 @@ const handleNotFond = (request, response) => {
     }
   });
 };
-
 const handelServe = (request, response) => {
   const endpoint = request.url;
   const extintion = endpoint.split(".")[1];
@@ -34,7 +32,6 @@ const handelServe = (request, response) => {
     js: "text/javascript",
     json: "application/json"
   };
-
   pathFile = path.join(__dirname, "..", endpoint);
   fs.readFile(pathFile, (error, file) => {
     if (error) {
@@ -45,19 +42,17 @@ const handelServe = (request, response) => {
     }
   });
 };
-
 const handelJsonFile = (request, response) => {
-  const pathFile = path.join(__dirname, "Country.json");
+  const pathFile = path.join(__dirname, "Country.json")
   fs.readFile(pathFile, (error, file) => {
     if (error) {
       console.log("error");
     } else {
-      response.writeHead(200, { "contant-Type": "application/json" });
+      response.writeHead(200, { "contant-Type": "application/json" })
       response.end(file);
     }
-  });
-};
-
+  })
+}
 module.exports = {
   handlehomePage,
   handleNotFond,

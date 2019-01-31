@@ -4,17 +4,13 @@ const name = document.querySelector(".name");
 const capital = document.querySelector(".capital");
 const currncy = document.querySelector(".currncy");
 const pop = document.querySelector(".pop");
-
-input.addEventListener("input", e => {
+input.addEventListener("input", () => {
   dataResult.innerHTML = "";
-
-  dataRequist("/Country", response => {
+  dataRequist("Get", "/Country", (response) => {
     dataResult.innerHTML = "";
-
     response.filter(item => {
       if (item.country.startsWith(input.value.charAt(0).toUpperCase())) {
         const listItem = document.createElement("option");
-        listItem.value = item.country;
         listItem.textContent = item.country;
         dataResult.appendChild(listItem);
       }
