@@ -19,7 +19,7 @@ input.addEventListener("input", e => {
         dataResult.appendChild(listItem);
       }
     });
-    
+
     response.forEach(element => {
       if (element.country === input.value) {
         name.textContent = input.value;
