@@ -23,6 +23,6 @@
   "homepage": "https://github.com/FACG6/Kaaf-Country-autocomplete#readme",
   "devDependencies": {
     "nodemon": "^1.18.9"
-  },
-  "dependencies": {}
+  }
+ 
 }
